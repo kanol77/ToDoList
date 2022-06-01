@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="2666505.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="load()">
+    <!--Cookie consent scripts-->
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({Palette:"palette5",Mode:"floating right",Theme:"classic",Message:"This site uses the browser's local storage to ensure the best possible experience!",ButtonText:"Okay!",LinkText:"Read more about cookies and other storage!",Time:"5",})</script>
+    <!--Actual Site-->
+    <header>
+        <h1><a href="">To Do List<img src="2666505.png" alt="List Icon"></a></h1>
+
+    </header>
+    <article>
+        <div class="in">
+            <p class="title">ADD QUEST</p>
+            <textarea type="text" placeholder="type here..." class="data"></textarea>
+            <br><button class="push bomb">ADD</button>
+            <button class="del bomb">CLEAR LIST</button>
+        </div>
+        <h5 class="info">
+            To add quest click <strong>ADD</strong> button or <strong>ENTER</strong>.<br>
+            To clear list click <strong>CLEAR LIST</strong> button or <strong>DELETE</strong>.<br>
+            To remove a single element, <strong>CLICK IT!</strong></h5>
+        <div class="out">
+            <div class="temp">List is empty!</div>
+            <ol class="OList"></ol>
+        </div>
+    </article>
+    <footer>Site created by: kanol77 <br> <a href="https://www.flaticon.com/free-icons/checklist" title="checklist icons">Checklist icons created by Freepik - Flaticon</a></footer>
+
+</body>
+
+</html>

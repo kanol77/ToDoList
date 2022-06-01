@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 800ms ease-in;
+}
+
+body {
+    font-family: Impact, Arial;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(#2e2e2e, #636363);
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    letter-spacing: 0.2em;
+    color: black;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    padding: 1em;
+    background: rgb(30, 100, 10);
+}
+
+.in {
+    width: 98.5%;
+    border: 0.3em dashed black;
+    padding: 1em;
+    height: 100%;
+    margin: 1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+.data {
+    min-width: 220px;
+    min-height: 80px;
+    width: 30rem;
+    height: 2em;
+    margin-top: 2rem;
+    font-size: 2rem;
+    max-width: 100%;
+    padding: 1rem;
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    overflow:auto;
+}
+
+.push {
+    font-size: 2rem;
+    padding: 0.3em;
+    margin-top: 10px;
+}
+
+.del {
+    font-size: 2rem;
+    padding: 0.3em;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.out {
+    width: 98.5%;
+    border: 0.3em double black;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    overflow: hidden;
+    list-style-position: inside;
+    overflow-y: scroll;
+    max-height: 22rem;
+}
+
+footer {
+    width: 100%;
+    height: 4em;
+    font-size: 1.3rem;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    background-color: rgb(30, 100, 10);
+    padding: 1.3em;
+    overflow: hidden;
+    color: black;
+}
+
+img {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+}
+
+.bomb {
+    background-color: rgb(30, 100, 10);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+    z-index: -1;
+    display: inline-block;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.5em 0 rgb(35, 116, 12);
+}
+
+.bomb:hover,
+.bomb:focus {
+    background-color: rgb(49, 167, 17);
+    box-shadow: 0 0 2em 0 rgb(53, 168, 22);
+}
+
+.data:hover,
+.data:focus {
+    box-shadow: 0 0 1em 0 rgb(26, 26, 26);
+    transition: 0.5s ease-in-out;
+}
+
+.info {
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+strong{
+    font-size: large;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover{
+    opacity: 0.7;
+}
+
+/*
+Scrollbar styling:
+*/
+
+body::-webkit-scrollbar{
+    width: 20px;
+}
+
+.out::-webkit-scrollbar{
+    width: 20px;
+}
+
+.data::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 207, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 207, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: #383838;
+}
+
+/*Firefox below*/
+
+html{
+    scrollbar-color: black rgb(0,207,0);
+}
